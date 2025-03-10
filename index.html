@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASSER ACADEMY</title>
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #202123;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* تنسيق العنوان الرئيسي */
+        .header h1 {font-size: 48px; font-weight: bold; 
+            color: red; 
+            text-shadow: 3px 3px 8px rgba(255, 0, 0, 0.7); 
+            margin-top: 20px;
+        }
+
+        /* تنسيق صفحة تسجيل الدخول */
+        .login-container {
+            background: #2b2b2b;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            margin-top:100px;
+           
+        }
+.qwe {
+   height: 250px; 
+   width:250 ;
+margin-right:150px;
+border: 50px;
+}
+
+        .input-box input {
+            width: 90%;
+            padding: 10px;
+            background: #444;
+            border: none;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background: red;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top:20px;
+        }
+
+        .login-btn:hover {
+            background: darkred;
+        }
+
+        /* تنسيق صفحة الفيديوهات */
+        .videos-container {
+            display: none;
+            margin-top: 50px;
+            text-align: left;
+            padding: 20px;
+            
+        }
+
+        .video-box {
+            background: #2b2b2b;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+            margin-bottom: 15px;
+            text-align: center;
+            width: 320px;
+            float: right;
+            margin-right: 10%;
+        }
+
+        .video-box video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body background="Black and Grey Simple Playful Formula Mathematics School Notebook Cover Document A4.png">
+    <!-- العنوان الرئيسي -->
+<img src="YASser academy (1).png" class="qwe">
+    
+
+    <!-- صفحة تسجيل الدخول -->
+    <div class="login-container" id="loginForm">
+        <h2>SIGN IN</h2>
+        <div class="input-box">
+            <input type="password" placeholder="Enter Password" id="password">
+        </div>
+        <button class="login-btn" onclick="checkPassword()">Login</button>
+        
+    </div>
+
+    <!-- صفحة الفيديوهات -->
+    <div class="videos-container" id="videosPage">
+        <h2>lessons</h2>
+        <div class="video-box">
+            <h3>Video 1</h3>
+            <video controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-box">
+            <h3>Video 2</h3>
+            <video controls>
+                <source src="https://www.youtube.com/watch?v=QWVRk8QJgqE" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+</div>
+<div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        
+        </div>
+ <div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+</div>
+ <div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+</div>
+ <div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+</div>
+ <div class="video-box">
+            <h3>jklkklj</h3>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+</div>
+    </div>
+<div class="header">   
+        
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === '123456') {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('videosPage').style.display = 'block';
+            } else {
+                alert('Incorrect password! Please try again.');
+            }
+        }
+
+        function showVideos() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('videosPage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
